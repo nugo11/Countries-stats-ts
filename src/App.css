@@ -1,0 +1,271 @@
+header {
+  box-shadow: 0px 2px 4px 0px #0000000e;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  align-items: center;
+  height: 76px;
+}
+
+header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header img {
+  width: 14px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+main {
+  background-color: #f1f1f17e;
+}
+
+.mainhead {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.mainhead input {
+  padding: 15px 170px 15px 40px;
+  outline: none;
+  position: relative;
+  border: none;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+}
+
+.mainhead select {
+  padding: 15px 120px 15px 15px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+}
+
+.mainhead option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px;
+}
+
+.inputimg {
+  position: relative;
+}
+
+.inputimg::after {
+  content: "";
+  background-image: url(../public/imgs/search.svg);
+  position: absolute;
+  background-size: contain;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
+.mainbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.box {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+  border-radius: 5px;
+}
+
+.box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box h1 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+.box b {
+  font-weight: lighter;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+}
+
+.info h1 {
+  color: black;
+}
+
+.fullstory {
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.back {
+  display: flex;
+  justify-content: start;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  GAP: 50PX
+}
+
+.card img {
+  width: 45%;
+  height: 33vh;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+}
+
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.cardinfo h1 {
+  font-size: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+}
+
+.stat1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.border button {
+  border: none;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+  color: rgb(57, 57, 57);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back a {
+  color: rgb(33, 33, 33);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+div.stats > div:nth-child(2) > p:nth-child(3) {
+  display: flex;
+  gap: 5px;
+}
+
+@media (width < 1050px) {
+  .box {
+    width: 32%;
+  }
+}
+
+@media (width < 950px) {
+.fullstory {
+  height: auto;
+}
+
+.card {
+  flex-direction: column;
+}
+
+.card img {
+  width: 98%;
+}
+
+.stats {
+  flex-direction: column;
+}
+
+.border {
+  margin-bottom: 50px;
+}
+}
+@media (width < 750px) {
+  .box {
+    width: 48%;
+  }
+  header h1 {
+    font-size: 17px;
+  }
+
+  .mainhead {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .inputimg input {
+    width: 100%;
+    padding: 15px 35px;
+  }
+
+  .mainhead select {
+    width: 40%;
+    padding: 15px;
+  }
+}
+@media (width < 550px) {
+  .box {
+    width: 98%;
+  }
+
+  header h1 {
+    font-size: 15px;
+  }
+
+  .mainhead select {
+    width: 80%;
+    padding: 15px;
+  }
+}
